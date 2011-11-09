@@ -1,0 +1,10 @@
+This Python module provides helper routines to make OpenCV interoparble with C libraries through ctypes
+
+To install run
+
+  sudo make install
+
+Or to use a different Python version
+
+  sudo make install PYTHON=python2.6
+
