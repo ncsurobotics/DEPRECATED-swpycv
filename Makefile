@@ -8,7 +8,7 @@ OPENCV_FLAGS = $(strip $(shell pkg-config --libs --cflags opencv))
 PYTHON_FLAGS = $(strip $(shell $(PYTHON)-config --includes))
 
 $(LIB_NAME): swpycv.c
-	$(CC) $(OPENCV_FLAGS) $(PYTHON_FLAGS) -fPIC --shared -Wl,-soname,$(LIB_NAME) $< -o $@
+	$(CC) $(PYTHON_FLAGS) -fPIC --shared -Wl,-soname,$(LIB_NAME) $< $(OPENCV_FLAGS) -o $@
 
 install: $(LIB_NAME)
 	$(PYTHON) setup.py install
