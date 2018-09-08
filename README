@@ -1,3 +1,8 @@
+# DEPRECATED
+This repository contains deprecated code.
+
+
+# README
 This Python module provides helper routines to make OpenCV interoparble with C libraries through ctypes
 
 To install run
